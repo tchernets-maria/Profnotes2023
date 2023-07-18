@@ -16,11 +16,4 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
     }
 
-    override fun onResume() {
-        super.onResume()
-        binding.btnToSecond.setOnClickListener {
-            val intent = Intent(this, SecondActivity::class.java)
-            startActivity(intent)
-        }
-    }
 }
